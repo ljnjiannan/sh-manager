@@ -10,9 +10,9 @@ archive.directory('resource/');
 archive.directory('scripts/');
 archive.directory('server/');
 archive.directory('web/');
-archive.append('package.json', {name: 'package.json'});
-archive.append('vite.config.js', {name: 'vite.config.js'});
-archive.append('nodemon.json', {name: 'nodemon.json'});
+archive.file('package.json', {name: 'package.json'});
+archive.file('vite.config.js', {name: 'vite.config.js'});
+archive.file('nodemon.json', {name: 'nodemon.json'});
 
 // 第五步，完成压缩
 archive.finalize();
